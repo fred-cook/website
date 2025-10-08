@@ -1,22 +1,20 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Fred Cook
 tagline:          'Personal Website'
 description:      'Programmer'
-url:              https://fred-cook.github.io/website/
+url:              https://fred-cook.github.io/
 baseurl:          /
 
 author:
   name:           'Fred Cook'
 
 paginate:         5
+paginate_path: "/_posts:num/"
+
 
 # Custom vars
 version:          0.1.0
