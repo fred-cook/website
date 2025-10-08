@@ -27,7 +27,6 @@ url: "https://fred-cook.github.io/website/" # the base hostname & protocol for y
 github_username:  fred-cook
 
 # Build settings
-theme: hyde
 plugins:
   - jekyll-feed
 
