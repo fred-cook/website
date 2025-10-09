@@ -6,7 +6,7 @@ title:            Fred Cook
 tagline:          'Personal Website'
 description:      'Programmer'
 url:              https://fred-cook.github.io/
-baseurl:          /
+baseurl:          /website
 
 author:
   name:           'Fred Cook'
