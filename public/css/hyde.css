@@ -166,85 +166,50 @@ a.sidebar-nav-item:focus {
   }
 }
 
-
-
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+.xw_grid {
+  display: block;
+  width: 312px;
+  border-collapse: collapse;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--clr-shaded);
+  border: 1px;
+  border-color: black;
 }
 
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
+.xw_grid td, .xw_grid tr {
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 0px;
 }
 
-/* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
+/* Correcting for the borders all being double within the
+core of the grid */
+.xw_grid tr:first-child {
+  border-top: 1px solid black;}
+.xw_grid tr:last-child {
+  border-bottom: 1px solid black;}
+.xw_grid th:first-child,
+.xw_grid td:first-child{
+  border-left: 1px solid black; }
+.xw_grid th:last-child,
+.xw_grid td:last-child {
+  border-right: 1px solid black; }
+
+.xw_dark, .xw_light {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
 }
 
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
+.xw_light {
+  background-color: white;
+  border-color: black;
 }
