@@ -5,8 +5,8 @@ markdown:         kramdown
 title:            Fred Cook
 tagline:          'Personal Website'
 description:      'Programmer'
-url:              https://fred-cook.github.io
-baseurl:          /website
+url:              https://fredcook.co.uk
+baseurl:          /
 
 author:
   name:           'Fred Cook'
