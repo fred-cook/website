@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🔺 National Bass Map
+tags: bass project python
 ---
 
 I recently came across the excellent work done by the [National Bass Directory](https://nationalbassdirectory.wordpress.com/). A pdf of pubs serving Bass, updated monthly with tip offs from regular drinkers (Bassketeers). However, no one had gone to the trouble of putting them in a Google map layer for easy navigation. This was fairly easily remedied. You can find the map [here](https://www.google.com/maps/d/edit?mid=1pgF_A7wvn17yKz4KNUWqZZ62fl7Rfa8&usp=sharing), and the code that made it [here](https://github.com/fred-cook/Bass-map).

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 🎵 Music League
+tags: music
 ---
 
 For the past couple of years I have been running a music league at work. All of the hard work is done by the [music league app](https://musicleague.com/user-guide/), all I have to do is come up with 10 themes and set up the timing schedule for players to submit songs and vote. Then, each week, players have two days to think of and submit a song for the weeks theme (e.g. song with a colour in the title), and five days to vote on the playlist of songs. Players get 10 upvotes and 3 downvotes to to assign to the songs as they see fit, although these numbers can be configured by the league admin. The rounds in the latest league were:
