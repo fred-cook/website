@@ -429,9 +429,13 @@ a.pagination-item:hover {
   }
 }
 
-/* captions */
-.caption {
-  display: block;
-  font-style: italic;
-  text-align: center;
+figure {
+  margin: 2rem 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  opacity: 0.9;
 }
