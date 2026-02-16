@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ⏲ OTP Bingo Game Time
+title: ⏱️ OTP Bingo Game Time
 tags: python numpy
 ---
 
