@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themed Crossword Filler
+title: ✒️ Themed Crossword Filler
 date: 2021-07-11
 github: https://github.com/fuverdred/Crossword-Filler
 img: "/assets/images/themed_crossword_filler/grid.png"
