@@ -1,0 +1,41 @@
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: auto;
+    padding: 2rem;
+    background: #fafafa;
+}
+
+h1 {
+    margin-bottom: 0.2em;
+}
+
+.review-meta {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.review-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.4rem;
+}
