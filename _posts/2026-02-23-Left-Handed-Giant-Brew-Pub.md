@@ -1,0 +1,46 @@
+---
+layout: dartboard_review
+title: 👈 Pub Dartboard Review - Left Handed Giant
+tags: darts pub dartboard-review
+pub: Left Handed Giant Brew Pub
+location: Finzels Reach
+rating: 7
+---
+
+I’m a big fan of the Left Handed Giant brew pub because it ticks a lot of boxes. First of all, it has a great range of beers. I don’t tend to go for IPAs and their derivatives any more, although they normally have ~10 on at any one time. There are plenty of other interesting beers, a few stouts, three cask beers on my last trip, a [radler](https://open.spotify.com/track/4HqlbB0BuahK05r6P2KcwP?si=9382ff9339de4919) for sunny days, and a well populated frequently rotated guest section. They also have a couple of bottle/can fridges, which I have largely ignored so far. However, on this trip, I spotted a Schlenkerla, which I bought as training for a trip to Bamberg later this year. I will definitely be sampling more of the fridge in future.
+
+{% include figure.html
+src="/images/lhg/bottles.jpg"
+alt="Various German bottles of beer on a shelf in a fridge"
+caption="A small selection of the available bottles."
+%}
+
+Secondly, they serve food which can be a deal breaker for meeting up with friends after work. It’s mostly pizza, and it’s all vegetarian, but I am vegetarian and I like pizza so thumbs up from me. Thirdly it’s in a great spot, with a sun trap of a terrace and easy walking distance from Bristol Temple Meads for meeting up with commuting mates. Finally, and most importantly, it has three* dartboards.
+
+*_Currently only two dartboards are in operation, but the barman seemed confident they would be back to full complement soon._
+
+{% include figure.html
+src="/images/lhg/dartboards.jpg"
+alt="Two of the dartboards. Mounted on a brick wall with some greenery dangling around them"
+caption="The current set-up, missing the third dartboard which would be on the left."
+%}
+
+The dartboards are located on the top floor, which is only open from 5pm on weekdays and midday on weekends. They do tend to be quite busy, but usually people are up for a game or will give you a shout when they are done. The boards themselves are Winmau Blade 6s. I wasn’t a keen darts player when they first arrived, but they must have been a delight. They are now quite aged, having had a few rotations, but I’ve seen worse. They are slightly too low for a regulation darts set up, with the bullseyes at eye level for me, when they should be about an inch above my head.. However, my throw certainly isn’t honed enough for me to be luffing darts above the board consistently due to systematic error (in fact, I do luff them above the board often, but also below). Only one of the boards has a scoring system, a standard modern counter. Personally, I prefer a chalkboard. Doing maths is part of the game, and it allows a greater variety of game types (cricket, assassin, halve it, etc.) However, as everyone has a phone in their pocket it’s not a difficult problem to solve. In fact, I came across this [website](https://www.dartsy.io/) recently, which means you don’t even have to download an app.
+
+{% include figure.html
+src="/images/lhg/dartboard.jpg"
+alt="A closer view of one of the boards with an orange foam surround"
+caption="A closer view at one of the boards."
+%}
+
+The oche is a mat on the floor. I tend to dislike these for a few reasons. One you can see in the full photo is that they get rumpled against the wall. This means the oche isn’t at the correct distance. They also tend to have multiple lines and you’re expected to know that the regulation oche distance is the very normal and memorable number 7ft 9 (2.37m). The other number is typically 8ft, which is the soft tip darts distance. Some have more lines, but you’ll have to wait for my review of Industry on Gloucester road to see an example. Nothing beats a raised oche you can slam your foot against, rather than shuffling into position only to realise you’re on the wrong line. However, I doubt the casual player cares if the oche is off by an inch.
+
+In my experience playing darts there most people are using LHG’s darts rather than bringing their own. In fact, my first game was using darts from behind the bar. A mate had recently played at flight club with work, enjoyed it and wanted to play some more. We started playing a few games of round-the-clock and I was hooked.
+
+All in all, they have a great set-up. A few minor quibbles knock the score down a bit, but it certainly won’t stop me from being a frequent visitor.
+
+{% include figure.html
+src="/images/lhg/chopper.jpg"
+alt="two darts in the treble 20 and one dart out of the board for a score of 140"
+caption="Andrew’s high score, ton-twenty! Don’t worry about that third dart…"
+%}
