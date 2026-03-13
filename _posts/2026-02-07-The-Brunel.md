@@ -4,6 +4,8 @@ title: 🎩 Pub Dartboard Review - The Brunel
 tags: darts pub dartboard-review
 pub: The Brunel
 location: Bedminster
+lat: 51.435667
+lon: -2.594925
 rating: 5
 ---
 

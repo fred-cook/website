@@ -3,6 +3,8 @@ layout: dartboard_review
 title: 🎠 Pub Dartboard Review - The White Horse
 tags: darts pub dartboard-review
 location: Westbury-on-Trym
+lat: 51.494008
+lon: -2.618530
 rating: 8
 ---
 
