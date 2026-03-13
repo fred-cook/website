@@ -4,6 +4,8 @@ title: 👈 Pub Dartboard Review - Left Handed Giant
 tags: darts pub dartboard-review
 pub: Left Handed Giant Brew Pub
 location: Finzels Reach
+lat: 51.4544510
+lon: -2.589428
 rating: 7
 ---
 
