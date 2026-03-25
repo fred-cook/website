@@ -39,3 +39,10 @@ figcaption {
     color: #555;
     margin-top: 0.4rem;
 }
+
+.review-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+}
