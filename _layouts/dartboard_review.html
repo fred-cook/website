@@ -38,12 +38,19 @@ layout: default
 <script>
 
 var map = L.map('map').setView([51.4545, -2.5879], 12);
-var dartIcon = L.divIcon({
+var ReviewedIcon = L.divIcon({
         html: "🎯",          // Dartboard emoji
         className: "dart-icon",
         iconSize: [30, 30],       // width, height of the div
         iconAnchor: [15, 30]       // point of the icon that corresponds to the lat/lon
     });
+
+var unReviewedIcon = L.icon({
+    iconUrl: '/images/dart_icon.png',
+    iconSize: [20, 20],    // size of the icon
+    iconAnchor: [10, 20],  // point that corresponds to lat/lon
+    popupAnchor: [0, -20]  // point from which the popup opens
+});
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
@@ -51,12 +58,25 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 {% for post in site.posts %}
 {% if post.lat %}
-L.marker([{{ post.lat }}, {{ post.lon }}], {icon: dartIcon})
+L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon})
 .addTo(map)
 .bindPopup("<b>{{ post.pub }}</b><br><a href='{{ post.url }}'>Read review</a>");
 
 {% endif %}
 {% endfor %}
+
+
+var unreviewedPubs = [
+    { name: "The Crown Tavern", lat: 51.4585655, lon: -2.5787093},
+    { name: "The Swan with Two Necks", lat: 51.459065, lon: -2.579258 },
+    { name: "The Sandringham", lat: 51.440920, lon: -2.555457 }
+];
+
+unreviewedPubs.forEach(function(pub) {
+    L.marker([pub.lat, pub.lon], {icon: unReviewedIcon})
+     .addTo(map)
+     .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>");
+});
 
 </script>
 
