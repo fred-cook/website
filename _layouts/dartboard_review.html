@@ -41,8 +41,8 @@ var map = L.map('map').setView([51.4545, -2.5879], 12);
 var ReviewedIcon = L.divIcon({
         html: "🎯",          // Dartboard emoji
         className: "dart-icon",
-        iconSize: [30, 30],       // width, height of the div
-        iconAnchor: [15, 30]       // point of the icon that corresponds to the lat/lon
+        iconSize: [45, 45],       // width, height of the div
+        iconAnchor: [20, 45]       // point of the icon that corresponds to the lat/lon
     });
 
 var unReviewedIcon = L.icon({
@@ -67,9 +67,28 @@ L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon})
 
 
 var unreviewedPubs = [
-    { name: "The Crown Tavern", lat: 51.4585655, lon: -2.5787093},
+    { name: "The Crown Tavern", lat: 51.4585655, lon: -2.578709 },
     { name: "The Swan with Two Necks", lat: 51.459065, lon: -2.579258 },
-    { name: "The Sandringham", lat: 51.440920, lon: -2.555457 }
+    { name: "The Sandringham", lat: 51.440920, lon: -2.555457 },
+    { name: "The Clyde", lat: 51.468883, lon: -2.609076 },
+    { name: "The Post Office Tavern", lat: 51.490977, lon: -2.616701 },
+    { name: "Sportsman's", lat: 51.455664, lon: -2.597360 },
+    { name: "The Ship Inn", lat: 51.455738, lon: -2.598863 },
+    { name: "The Ship", lat: 51.447468, lon: -2.589054 },
+    { name: "The Duke of York", lat: 51.467317, lon: -2.575740 },
+    { name: "The Cat and Wheel", lat: 51.468876, lon: -2.593115 },
+    { name: "The Prince of Wales", lat: 51.470496, lon: -2.593429 },
+    { name: "Bishop's Tavern", lat: 51.469803, lon: -2.593784 },
+    { name: "Industry", lat: 51.473649, lon: -2.591211 },
+    { name: "The White Harte", lat: 51.455371, lon: -2.602886 },
+    { name: "The Avon Packet", lat: 51.445775, lon: -2.611126 },
+    { name: "The Masonic", lat: 51.440550, lon: -2.606230 },
+    { name: "The Jolly Colliers", lat: 51.438605, lon: -2.602898 },
+    { name: "The Sportsman", lat: 51.479207, lon: -2.586979 },
+    { name: "Horse and Jockey", lat: 51.455860, lon: -2.528644 },
+    { name: "Pied Horse", lat: 51.459785, lon: -2.537255 },
+    { name: "King William IV", lat: 51.480866, lon: -2.503041 },
+    { name: "Supreme Sports Lounge", lat: 51.447600, lon: -2.568730 }
 ];
 
 unreviewedPubs.forEach(function(pub) {
