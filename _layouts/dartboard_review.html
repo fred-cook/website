@@ -38,18 +38,18 @@ layout: default
 <script>
 
 var map = L.map('map').setView([51.4545, -2.5879], 12);
-var ReviewedIcon = L.divIcon({
-        html: "🎯",          // Dartboard emoji
-        className: "dart-icon",
-        iconSize: [45, 45],       // width, height of the div
-        iconAnchor: [20, 45]       // point of the icon that corresponds to the lat/lon
-    });
+var ReviewedIcon = L.icon({
+    iconUrl: '/images/reviewed_icon.svg',
+    iconSize: [25, 25],       // width, height of the div
+    iconAnchor: [0, 13],       // point of the icon that corresponds to the lat/lon
+    popupAnchor: [13, 0]  // point from which the popup opens
+});
 
 var unReviewedIcon = L.icon({
-    iconUrl: '/images/dart_icon.png',
-    iconSize: [20, 20],    // size of the icon
-    iconAnchor: [10, 20],  // point that corresponds to lat/lon
-    popupAnchor: [0, -20]  // point from which the popup opens
+    iconUrl: '/images/unreviewed_icon.svg',
+    iconSize: [25, 25],    // size of the icon
+    iconAnchor: [0, 13],  // point that corresponds to lat/lon
+    popupAnchor: [13, 0]  // point from which the popup opens
 });
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -89,7 +89,9 @@ var unreviewedPubs = [
     { name: "Pied Horse", lat: 51.459785, lon: -2.537255 },
     { name: "King William IV", lat: 51.480866, lon: -2.503041 },
     { name: "Supreme Sports Lounge", lat: 51.447600, lon: -2.568730 },
-    { name: "The Lodekka", lat: 51.437248, lon: -2.555920 }
+    { name: "The Lodekka", lat: 51.437248, lon: -2.555920 },
+    { name: "The Shakespeare", lat: 51.443456, lon: -2.579839 },
+    { name: "The Victoria", lat: 51.470335, lon: -2.573989 }
 ];
 
 unreviewedPubs.forEach(function(pub) {
