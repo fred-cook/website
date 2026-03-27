@@ -7,6 +7,7 @@
 <script>
 
 var map = L.map('map').setView([51.4545, -2.5879], 12);
+
 var ReviewedIcon = L.icon({
     iconUrl: '/images/reviewed_icon.svg',
     iconSize: [25, 25],       // width, height of the div
@@ -21,19 +22,10 @@ var unReviewedIcon = L.icon({
     popupAnchor: [13, 0]  // point from which the popup opens
 });
 
+
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
-
-{% for post in site.posts %}
-{% if post.lat %}
-L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon})
-.addTo(map)
-.bindPopup("<b>{{ post.pub }}</b><br><a href='{{ post.url }}'>Read review</a>");
-
-{% endif %}
-{% endfor %}
-
 
 var unreviewedPubs = [
     { name: "The Crown Tavern", lat: 51.4585655, lon: -2.578709 },
@@ -72,5 +64,14 @@ unreviewedPubs.forEach(function(pub) {
      .addTo(map)
      .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>");
 });
+
+{% for post in site.posts %}
+{% if post.lat %}
+L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon, zIndexOffset: 1000})
+.addTo(map)
+.bindPopup("<b>{{ post.pub }}</b><br><a href='{{ post.url }}'>Read review</a>");
+
+{% endif %}
+{% endfor %}
 
 </script>
