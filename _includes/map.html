@@ -1,0 +1,72 @@
+<div id="map" style="height:600px;"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+var map = L.map('map').setView([51.4545, -2.5879], 12);
+var ReviewedIcon = L.icon({
+    iconUrl: '/images/reviewed_icon.svg',
+    iconSize: [25, 25],       // width, height of the div
+    iconAnchor: [0, 13],       // point of the icon that corresponds to the lat/lon
+    popupAnchor: [13, 0]  // point from which the popup opens
+});
+
+var unReviewedIcon = L.icon({
+    iconUrl: '/images/unreviewed_icon.svg',
+    iconSize: [25, 25],    // size of the icon
+    iconAnchor: [0, 13],  // point that corresponds to lat/lon
+    popupAnchor: [13, 0]  // point from which the popup opens
+});
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+{% for post in site.posts %}
+{% if post.lat %}
+L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon})
+.addTo(map)
+.bindPopup("<b>{{ post.pub }}</b><br><a href='{{ post.url }}'>Read review</a>");
+
+{% endif %}
+{% endfor %}
+
+
+var unreviewedPubs = [
+    { name: "The Crown Tavern", lat: 51.4585655, lon: -2.578709 },
+    { name: "The Swan with Two Necks", lat: 51.459065, lon: -2.579258 },
+    { name: "The Sandringham", lat: 51.440920, lon: -2.555457 },
+    { name: "The Clyde", lat: 51.468883, lon: -2.609076 },
+    { name: "The Post Office Tavern", lat: 51.490977, lon: -2.616701 },
+    { name: "Sportsman's", lat: 51.455664, lon: -2.597360 },
+    { name: "The Ship Inn", lat: 51.455738, lon: -2.598863 },
+    { name: "The Ship", lat: 51.447468, lon: -2.589054 },
+    { name: "The Duke of York", lat: 51.467317, lon: -2.575740 },
+    { name: "The Cat and Wheel", lat: 51.468876, lon: -2.593115 },
+    { name: "The Prince of Wales", lat: 51.470496, lon: -2.593429 },
+    { name: "Bishop's Tavern", lat: 51.469803, lon: -2.593784 },
+    { name: "Industry", lat: 51.473649, lon: -2.591211 },
+    { name: "The White Harte", lat: 51.455371, lon: -2.602886 },
+    { name: "The Avon Packet", lat: 51.445775, lon: -2.611126 },
+    { name: "The Masonic", lat: 51.440550, lon: -2.606230 },
+    { name: "The Jolly Colliers", lat: 51.438605, lon: -2.602898 },
+    { name: "The Sportsman", lat: 51.479207, lon: -2.586979 },
+    { name: "Horse and Jockey", lat: 51.455860, lon: -2.528644 },
+    { name: "Pied Horse", lat: 51.459785, lon: -2.537255 },
+    { name: "King William IV", lat: 51.480866, lon: -2.503041 },
+    { name: "Supreme Sports Lounge", lat: 51.447600, lon: -2.568730 },
+    { name: "The Lodekka", lat: 51.437248, lon: -2.555920 },
+    { name: "The Shakespeare", lat: 51.443456, lon: -2.579839 },
+    { name: "The Victoria", lat: 51.470335, lon: -2.573989 }
+];
+
+unreviewedPubs.forEach(function(pub) {
+    L.marker([pub.lat, pub.lon], {icon: unReviewedIcon})
+     .addTo(map)
+     .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>");
+});
+
+</script>
