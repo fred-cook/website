@@ -7,7 +7,7 @@ location: Xaló
 lat: 38.739891
 lon: -0.013145
 rating: 1
-—
+---
 
 This is the first foreign installment of dartboard reviews, although I expect to be taken to an Pfeilwurfspiel-Eckkneipe when I visit Berlin later this year. I am on a cycling holiday in Xaló and was starting to get serious darts withdrawal symptoms after five days without throwing an arrow. After a quick Google I found a bar barely 100 metres from the front door of the AirBnB. Alas, it only has soft tip darts which I have never thrown before, but there is a first time for everything.
 
