@@ -1,5 +1,3 @@
-## The Sandringham
-
 ---
 layout: dartboard_review
 title: 🏰 Pub Dartboard Review - The Sandringham
