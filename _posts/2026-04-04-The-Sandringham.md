@@ -22,10 +22,10 @@ Bass is served in [Bristol style](https://boakandbailey.com/2019/01/bristol-wher
 {% include figure.html
 src="/images/sandringham/bass.jpg"
 alt="Most of a pint of Bass, shot from a high angle to show the lack of foam/head"
-caption="Headless Bass. I did have to have a sip on the way over to prevent spillage."
+caption="Headless Bass. I did have to have a sip on the way over to prevent further spillage."
 %}
 
-Unlike most of the rest of the pubs I’ve reviewed so far, darts isn’t a secondary consideration at the Sandringham. The back room has four boards, all set up with plenty of room and high quality boards despite plenty of use. While I don’t think any of the pubs I’ve reviewed so far have dartboards purely as an accessory, they are often tucked out of the way such that it makes playing a normal game quite difficult. On arrival the first two boards were occupied, so we settled on the third.
+Unlike most of the rest of the pubs I’ve reviewed so far, darts isn’t a secondary consideration at the Sandringham. The back room has four boards, all set up with plenty of room and of high quality, despite plenty of use. While I don’t think any of the pubs I’ve reviewed so far have dartboards purely as an accessory, they are often tucked out of the way such that it makes playing a normal game quite difficult. On arrival the first two boards were occupied, so we settled on the third.
 
 {% include figure.html
 src="/images/sandringham/board.jpg"
