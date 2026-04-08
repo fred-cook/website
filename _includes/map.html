@@ -6,7 +6,11 @@
 
 <script>
 
+{% if page.lat %}
+var map = L.map('map').setView([{{ page.lat }}, {{ page.lon }}], 14);
+{% else %}
 var map = L.map('map').setView([51.4545, -2.5879], 12);
+{% endif %}
 
 var ReviewedIcon = L.icon({
     iconUrl: '/images/reviewed_icon.svg',
@@ -66,9 +70,14 @@ unreviewedPubs.forEach(function(pub) {
 
 {% for post in site.posts %}
 {% if post.lat %}
-L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon, zIndexOffset: 1000})
-.addTo(map)
-.bindPopup("<b>{{ post.pub }}</b><br><a href='{{ post.url }}'>Read review</a>");
+var marker = L.marker([{{ post.lat }}, {{ post.lon }}], {icon: ReviewedIcon, zIndexOffset: 1000});
+marker.addTo(map)
+marker.bindPopup("<b>{{ post.pub }}</b><br><a href='{{ post.url }}'>Read review</a>");
+
+{% if page.url == post.url %}
+marker.bindPopup("<b>{{ post.pub }}</b>");
+marker.openPopup();
+{% endif %}
 
 {% endif %}
 {% endfor %}
