@@ -17,7 +17,7 @@ alt="The Bass beer tap, an electric pump instead of a beer pump"
 caption="The fountain of Bass."
 %}
 
-Bass is served in [Bristol style](https://boakandbailey.com/2019/01/bristol-where-headless-pints-are-a-feature-not-a-bug/), using an electric pump and with not a fleck of foam. Also right to the brim, so that the meniscus is bulging over the top of the glass and it can’t be picked up off the bar without spilling. Personally, I like a bit of head on a beer, although I have to say the Bass in the Sandringham goes down very nicely so I can’t complain. Although there were a few pints of lager/Guinness knocking around, most patrons were drinking Bass or the other Bristol pub perennial: cans of Natch.
+Bass is served in [Bristol style](https://boakandbailey.com/2019/01/bristol-where-headless-pints-are-a-feature-not-a-bug/), using an electric pump and with not a fleck of foam. Also right to the brim, so that the meniscus is bulging over the top of the glass and it can’t be picked up off the bar without spilling. Personally, I like a bit of head on a beer, although I have to say the Bass in the Sandringham goes down very nicely so I can’t complain. Although there were a few pints of lager/Guinness knocking around, most patrons were drinking Bass or the other proper Bristol pub perennial: cans of Natch.
 
 {% include figure.html
 src="/images/sandringham/bass.jpg"
@@ -41,7 +41,7 @@ alt="a metal strip on the floor, about a metre wide"
 caption="The oches are all metal strips, slightly raised so you can feel it with your foot, but not enough to be a trip hazard."
 %}
 
-I still haven’t followed through on my threat to bring a measuring tape to check the oche, but with the care taken to regularly rotate the board, I suspect the set-ups are all correct. It’s definitely roughly the right distance, and the board was the right height using my head as a measuring stick. The board we were on was definitely the third best in terms of the oche, as the [desire path](https://en.wikipedia.org/wiki/Desire_path) to the loo cuts diagonally across the room from the entrance, which avoids the first two oches but bisects the latter two. For scoring there are chalkboards and chalk galore, although not the only white powder present as mentioned. The chalkboards are patterned into four columns, allowing you to enter your score and new total if you don’t trust your opponent's maths.
+I still haven’t followed through on my threat to bring a measuring tape to check the oche, but with the care taken to regularly rotate the board, I suspect the set-ups are all correct. It’s definitely roughly the right distance, and the board was the right height using my head as a measuring stick. The board we were on was definitely the third best in terms of the oche, as the [desire path](https://en.wikipedia.org/wiki/Desire_path) to the loo cuts diagonally across the room from the entrance, which avoids the first two oches but bisects the latter two. Generally people would walk behind the oche, but a few would nip through between throws. For scoring there are chalkboards and chalk galore, although not the only white powder present as mentioned. The chalkboards are patterned into four columns, allowing you to enter your score and new total for double checking your maths if required.
 
 {% include figure.html
 src="/images/sandringham/wide.jpg"
