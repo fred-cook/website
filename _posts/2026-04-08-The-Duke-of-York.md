@@ -1,6 +1,6 @@
 ---
 layout: dartboard_review
-title: 🏰 Pub Dartboard Review - The Duke of York
+title: 👊 Pub Dartboard Review - The Duke of York
 tags: darts pub dartboard-review
 pub: The Duke of York
 location: St. Werburghs 
