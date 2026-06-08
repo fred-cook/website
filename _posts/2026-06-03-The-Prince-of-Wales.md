@@ -6,7 +6,7 @@ pub: The Prince of Wales
 location: The Arches
 lat: 51.47047
 lon: -2.59339
-rating: 6
+rating: 5
 ---
 
 I have been going to the Prince of Wales since 2014, but only in the last year or so for the darts as well as the session. It changed hands somewhere in between the beginning of my darts obsession and the set-up was given a serious upgrade. I have searched through my pictures for a snap of the original board, which had a huge lump in the 11 segment and was mounted a foot too high. Alas, I failed to find one, but I'll update this post if I do. The new landlords are part of [craft union pubs](https://www.craftunionpubs.com/about-us). It wasn't just the dartboard that got an upgrade; the whole pub got a lick of paint, and every wall got a telly/advertising screen. I also think the age range of the punters has increased, from previously being a very studenty pub to now featuring a coterie of older regulars.
