@@ -1,6 +1,6 @@
 ---
 layout: dartboard_review
-title: 🐰 Pub Dartboard Review - The Hare on the Hill
+title: 🐇 Pub Dartboard Review - The Hare on the Hill
 tags: darts pub dartboard-review
 pub: The Hare on the Hill
 location: Kingsdown
