@@ -9,7 +9,7 @@ lon: -2.593784
 rating: 7
 ---
 
-Bishops Tavern is the sort of place I would typically avoid, preferring any one of the number of independent pubs up Gloucester Road over a Greene King. However, I spotted a dartboard through the window and therefore decided to make a trip. The board is next to a large window, with the oche parallel to the pavement outside. It's bright and a good spot for people watching. The beer choice was a standard selection of lagers and IPAs, there was nothing on cask when I visited, I'm not sure if that's standard. I opted for some sort of German wheat beer they had on.
+Bishops Tavern is the sort of place I would typically avoid, preferring any one of the number of independent pubs up Gloucester Road over a Greene King. However, I spotted a dartboard through the window and therefore decided to make a trip. The board is next to a large window, with the oche parallel to the pavement outside. It's bright and a good spot for people watching. The beer choice was mostly a standard selection of lagers and IPAs, there was nothing on cask when I visited, I'm not sure if that's standard. I opted for a pint of Schneider Weisse, which I was surprised to see but went down very nicely.
 
 {% include figure.html
 src="/images/bishops-tavern/beer.jpg"
