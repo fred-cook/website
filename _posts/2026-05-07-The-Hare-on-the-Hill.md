@@ -14,7 +14,7 @@ My pub of choice on Dove Street is The Hillgrove. However, Boak and Bailey's [po
 {% include figure.html
 src="/images/hare-on-the-hill/external.jpg"
 alt="A picture of the outside of the pub at a Dutch angle"
-caption="Dutch angles in Bristol. Photo credit [Jacqui Regan](https://maps.app.goo.gl/J4KpGEaBd9ykfMQbA) as I forgot to take one."
+caption="Dutch angles in Bristol. Photo credit Jacqui Regan on Google reviews as I forgot to take one."
 %}
 
 The board is a well-used Winmau Diamond Plus. The "Diamond" refers to the shape of the wires, which are designed to deflect darts into the board rather than bounce them out, albeit with mixed success. The wires are a little wonky in places, the beds are a bit tired and for some reason patches of black ink have vanished but the board remains usable. Weirdly, they have opted not to put any sort of foam surround/wall protection. Maybe they have tremendous faith in the darting ability of their punters; however, it has led to a number of holes in the wall and a chunk of missing plaster, as shown below. The board is only attached at the top, meaning care has to be taken when fetching darts, so as not to bring the whole thing down.
