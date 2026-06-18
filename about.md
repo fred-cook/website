@@ -7,7 +7,7 @@ Bristol based programmer, here are some of my interests in no particular order:
 
 - 🧑‍💻programming
 - 📽️[cinema](https://letterboxd.com/fuverdred/)
-- ✒️cryptic crosswords
+- ✒️[cryptic crosswords](https://www.mycrossword.co.uk/Grub)
 - 🚴‍♀️cycling
 - 🧗‍♀️climbing
 - 🍻pubbing
