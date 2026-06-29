@@ -33,7 +33,7 @@ alt="the oche is a grubby line on the floor, about a metre long and 2.5cm wide f
 caption="The oche, the correct length but looking a little worse for wear"
 %}
 
-Scoring also left much to be desired. There was a small 2000s era digital scorer to the right of the board, however, it had a dead battery. There were also the usual chalkboards on the cupboard doors, but no chalk to be found in the vicinity or behind the bar. This meant using a phone app to score. So far I haven't found one I lik, however, this may have inspired the creation of one exactly to our needs.
+Scoring also left much to be desired. There was a small 2000s era digital scorer to the right of the board, however, it had a dead battery. There were also the usual chalkboards on the cupboard doors, but no chalk to be found in the vicinity or behind the bar. This meant using a phone app to score. So far I haven't found one I like, however, we discussed what we were after in a scoring app and they aren't hard to make. There could be a link here to the created app in the future.
 
 {% include figure.html
 src="/images/the-lazy-dog/wide.jpg"
