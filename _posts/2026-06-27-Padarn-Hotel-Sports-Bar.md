@@ -1,6 +1,6 @@
 ---
 layout: dartboard_review
-title: ⛰ Pub Dartboard Review - Padarn Hotel Sports Bar
+title: 🗻 Pub Dartboard Review - Padarn Hotel Sports Bar
 tags: darts pub dartboard-review
 pub: Padarn Hotel Sports Bar
 location: Llanberis
@@ -9,7 +9,7 @@ lon: -4.125437
 rating: 6
 ---
 
-I always bring a set of darts with me wherever I can, just in case an opportunity presents. This was the case on a scrambling holiday in Snowdonia. Although the weather was uncharacteristcally fair for Wales, meaning no all day pub darts sessions was had, there was still a chance for a few pints and a throw one evening. The mural outside promised darts, and we weren't disappointed. The only cask beer on was the Snowdon Craft Bitter. It had just a whiff of being on the turn, but I was too keen to get to the board to bring it up. Although I did switch to their keg IPA thereafter. There was a telly at the end of the oche blasting S4C, but we were eventually deafened to its din.
+I always bring a set of darts with me wherever I can, just in case an opportunity presents. This was the case on a scrambling holiday in Snowdonia. Although the weather was uncharacteristically fair for Wales, meaning no all day pub darts sessions was had, there was still a chance for a few pints and a throw one evening. The mural outside promised darts, and we weren't disappointed. The only cask beer on was the Snowdon Craft Bitter. It had just a whiff of being on the turn, but I was too keen to get to the board to bring it up. Although I did switch to their keg IPA thereafter. There was a telly at the end of the oche blasting S4C, but we were eventually deafened to its din.
 
 {% include figure.html
 src="/images/padarn-hotel/mural.jpeg"
