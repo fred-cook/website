@@ -14,7 +14,7 @@ I always bring a set of darts with me wherever I can, just in case an opportunit
 {% include figure.html
 src="/images/padarn-hotel/mural.jpeg"
 alt="Me stood next to a large mural of a dartboard"
-caption="An unusal way to score 56"
+caption="A good effort at a dartboard, although it only has 16 segments. The score of 56 is better than my average, although it's a scatter gun approach to it"
 %}
 
 Unusually, the oche had two boards stacked vertically one above the other. The top board was the correct height, with the bull 5'8" above the ground. The second board had the bull about 75cm (~2'6") off the ground. Too low to be a wheelchair/junior darts set-up, which has the bull at 137cm (4'6"). I'm not sure what the second board was for. Both boards were Unicorn Eclipse Pros with bladed spiders. Neither board was rotated, but all the beds were in good nick. The lighting mount for the top board was cool; an old school Marin mountain bike frame chopped in half, with the light dangling from the head tube where the fork would normally sit. The final leg was played on the lower board. I was at a significant advantage over Tim, being almost a foot smaller, and just about managed to pin double eight to take the match.
