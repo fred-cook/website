@@ -25,7 +25,7 @@ alt="A close up picture of the board"
 caption="The board in the prince of Wales"
 %}
 
-The board, a Target TOR, is coming up to a year old but still in great nick, other than issues with the spider. It is possible it's not played on much, I have never encountered anyone else playing on it. That said, the number ring around the board has taken a battering to the extent that some are difficult to read, so it must have seen a fair amount of action. The image below shows the mentioned issue with the spider (metal bit that separates the segments). As darts land they cause vibrations which, over time, can lead to the spider wiggling its way out of the board. It's relatively easy to fix, just hammer it back in, but it is an annoying hassle. 
+The board, a Target TOR, is coming up to a year old but still in great nick, other than issues with the spider. It is possible it's not played on much, I have never encountered anyone else playing on it. That said, the number ring around the board has taken a battering to the extent that some are difficult to read, so it must have seen a fair amount of action. The image below shows the mentioned issue with the spider (metal bit that separates the segments). As darts land they cause vibrations which, over time, can lead to the spider wiggling its way out of the board. I've heard it's relatively easy to fix, just hammer it back in, but it is an annoying hassle. 
 
 {% include figure.html
 src="/images/prince-of-wales/spider.jpg"
