@@ -15,14 +15,14 @@ var map = L.map('map').setView([51.4545, -2.5879], 12);
 var ReviewedIcon = L.icon({
     iconUrl: '/images/reviewed_icon.svg',
     iconSize: [25, 25],       // width, height of the div
-    iconAnchor: [0, 13],       // point of the icon that corresponds to the lat/lon
+    iconAnchor: [13, 13],       // point of the icon that corresponds to the lat/lon
     popupAnchor: [13, 0]  // point from which the popup opens
 });
 
 var unReviewedIcon = L.icon({
     iconUrl: '/images/unreviewed_icon.svg',
     iconSize: [25, 25],    // size of the icon
-    iconAnchor: [0, 13],  // point that corresponds to lat/lon
+    iconAnchor: [13, 13],  // point that corresponds to lat/lon
     popupAnchor: [13, 0]  // point from which the popup opens
 });
 
