@@ -46,6 +46,6 @@ Throwing some darts was a great addition to a fantastic holiday in Snowdonia, I 
 {% include figure.html
 src="/images/padarn-hotel/vista.jpeg"
 alt="a shot of the mountains, with a lake in the distance below. A large stone protrudes at 45 degrees for a few metres, with me sat at the end of it"
-caption="Stunning scenery apart from the Streatham Rovers fan"
+caption="Stunning scenery apart from the Streatham Rovers fan on the Tryfan Cannon Stone"
 %}
 
