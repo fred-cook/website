@@ -14,6 +14,12 @@ alt="A table of the weather observations that day, sunny all day, temperature ~3
 caption="Weather conditions for the day"
 %}
 
+{% include figure.html
+src="/images/NWSE_crawl/map.png"
+alt="A screen grab of the map, highlighting the bounds of Bristol and the locations of the four pubs"
+caption="The challenge"
+%}
+
 In the challenge Bristol is defined as follows:
 
 >For the definition of Bristol we've gone with the official boundary of the City of Bristol as [published by the council](https://opendata.bristol.gov.uk/datasets/d355dc27cf124b2bbb67ada073846c1a_1/about).
