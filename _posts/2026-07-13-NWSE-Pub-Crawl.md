@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 🧭 Bristol North-West-South-East Pub Crawl
-date: 2026-07-13
+date: 2026-07-11
 img: assets/images/NWSE_crawl/map.png
 tags: pub cycling
 ---
