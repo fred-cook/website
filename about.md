@@ -6,7 +6,7 @@ title: About
 Bristol based programmer, here are some of my interests in no particular order:
 
 - 🧑‍💻 [Programming](https://github.com/fred-cook)
-- 📽️ [cinema](https://letterboxd.com/fuverdred/)
+- 📽️ [Cinema](https://letterboxd.com/fuverdred/)
 - ✒️ [Cryptic crosswords](https://www.mycrossword.co.uk/Grub)
 - 🚴‍♀️ Cycling
 - 🧗‍♀️ Climbing
