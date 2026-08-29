@@ -1,8 +1,8 @@
 ---
 layout: dartboard_review
-title: 🛥️ Pub Dartboard Review - The Pilot Boat
+title: 🛥️ Pub Dartboard Review - The Pilot Boat Inn
 tags: darts pub dartboard-review
-pub: The Pilot Boat
+pub: The Pilot Boat Inn
 location: Bembridge
 lat: 50.693849
 lon: -1.091191
