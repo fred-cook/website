@@ -1,8 +1,8 @@
 ---
 layout: dartboard_review
-title:  Pub Dartboard Review - La Belle Epoque
+title:  Pub Dartboard Review - La Belle Époque
 tags: darts pub dartboard-review
-pub: La Belle Epoque
+pub: La Belle Époque
 location: St-Malo
 lat: 48.647053
 lon: -2.026469
