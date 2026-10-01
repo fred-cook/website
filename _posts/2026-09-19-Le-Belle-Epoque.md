@@ -9,7 +9,7 @@ lon: -2.026469
 rating: 7
 ---
 
-Pendant mes vacances, je suis allé en France (and a bit of Paris, but there were no fléchettes to be found there). Specifically St-Malo, a beautiful fortress town on the North coast of France. I went for total immersion, reading only Patrick O'Brian Napoleonic-era naval fiction where some of the fortifications date from, visiting Dinard to pretend I was the bloke in Eric Rohmer's [Conte d'été](https://letterboxd.com/film/a-summers-tale/) and playing darts with the locals in a Hawaiian-themed bar. I count myself very lucky we found a steel-tip board. We found an electronic arcade-style soft-tip machine on the first night, which I had almost resigned myself to. The bar had a variety of beers on tap, mostly from the Atlantic Brewery. I sampled many over a few days, enjoying the Rousse, which I think is a new style to me.
+Pendant mes vacances, je suis allé en France. Specifically St-Malo (and a bit of Paris, but there were no fléchettes to be found there), a beautiful fortress town on the North coast of France. I went for total immersion, reading only Patrick O'Brian Napoleonic-era naval fiction where some of the fortifications date from, visiting Dinard to pretend I was the bloke in Eric Rohmer's [Conte d'été](https://letterboxd.com/film/a-summers-tale/) and playing darts with the locals in a Hawaiian-themed bar. I count myself very lucky we found a steel-tip board. We found an electronic arcade-style soft-tip machine on the first night, which I had almost resigned myself to. The bar had a variety of beers on tap, mostly from the Atlantic Brewery. I sampled many over a few days, enjoying the Rousse, which I think is a new style to me.
 
 {% include figure.html
 src="/images/la-belle-epoque/beer.jpg"
