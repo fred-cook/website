@@ -1,0 +1,227 @@
+---
+layout: default
+title: Commuter
+---
+
+<style>
+  .explode-scroll {
+    /* Scroll distance over which the bike explodes. */
+    height: 350vh;
+    position: relative;
+  }
+
+  .explode-stage {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .explode-stage svg {
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+
+  .explode-hint {
+    text-align: center;
+    font-family: monospace;
+    color: #777;
+  }
+</style>
+
+<h1>Commuter</h1>
+
+<p class="explode-hint">Scroll down ↓</p>
+
+<div class="explode-scroll" id="explode-scroll">
+  <div class="explode-stage" id="explode-stage"></div>
+</div>
+
+<script>
+(function () {
+  // Each part is moved as a unit. Parts drawn in two layers (_front / _rear)
+  // are listed together so both halves move in lock-step.
+  const PARTS = {
+    frame:           ['frame_front', 'frame_rear'],
+    saddle:          ['saddle'],
+    seatpost:        ['seatpost'],
+    seat_post_clamp: ['seat_post_clamp'],
+    headset:         ['headset'],
+    stem:            ['stem', 'stem_back'],
+    handlebars:      ['handlebars'],
+    fork:            ['fork_front', 'fork_rear'],
+    front_rack:      ['front_rack_front', 'front_rack_rear'],
+    front_mudguard:  ['front_mudguard_front', 'front_mudguard_rear'],
+    front_wheel:     ['front_wheel'],
+    front_tyre:      ['front_tyre_front', 'front_tyre_rear'],
+    front_axle:      ['front_axle_front', 'front_axle_rear'],
+    rear_rack:       ['rear_rack_front', 'rear_rack_rear'],
+    rear_mudguard:   ['rear_mudguard_front', 'rear_mudguard_rear'],
+    rear_light:      ['rear_light'],
+    rear_wheel:      ['rear_wheel'],
+    rear_tyre:       ['rear_tyre_front', 'rear_tyre_rear'],
+    rear_axle:       ['rear_axle_front', 'rear_axle_rear'],
+    cassette:        ['cassette'],
+    rear_mech:       ['rear_mech'],
+    hanger:          ['hanger'],
+    chain:           ['chain_front', 'chain_rear'],
+    chainset:        ['chainset_front'],
+  };
+
+  // Each part flies outward from the centre of the bike. Tweak per part:
+  //   scale: multiplier on (part centre - bike centre)
+  //   base:  extra outward distance, in SVG units
+  //   side:  sideways offset, perpendicular to the outward direction
+  //   dx/dy: fixed extra offset, in SVG units
+  //   spin:  rotation in degrees at full explosion
+  // Parts that share a centre (wheel / tyre / axle) use different base
+  // values so they separate along the same line instead of overlapping.
+  const DEFAULT = { scale: 0.6, base: 20, side: 0, dx: 0, dy: 0, spin: 0 };
+  const TUNING = {
+    frame:          { scale: 0,   base: 0 },
+    front_wheel:    { base: 40,  spin: 90 },
+    front_tyre:     { base: 90,  spin: -60 },
+    front_axle:     { base: 0,   dy: 45 },
+    rear_wheel:     { base: 40,  spin: 90 },
+    rear_tyre:      { base: 90,  spin: -60 },
+    rear_axle:      { base: 0,   dy: 45 },
+    cassette:       { base: 15,  dy: -30, spin: 45 },
+    hanger:         { base: 10,  dy: 20 },
+    rear_mech:      { base: 30,  dy: 50, spin: -20 },
+    chain:          { scale: 0.3, base: 0, dy: 70 },
+    chainset:       { base: 10,  dy: 30, spin: 120 },
+    seatpost:       { base: 30 },
+    seat_post_clamp:{ base: 10,  dx: -25 },
+    saddle:         { base: 60 },
+    headset:        { base: 15,  dx: 15 },
+    stem:           { base: 40 },
+    handlebars:     { base: 70,  spin: 15 },
+    fork:           { base: 20,  dy: 20 },
+    front_mudguard: { base: 55 },
+    rear_mudguard:  { base: 55 },
+    front_rack:     { base: 75 },
+    rear_rack:      { base: 75 },
+    rear_light:     { base: 110 },
+  };
+
+  // Scroll fraction at which the explosion starts / completes.
+  const START = 0.05, END = 0.85;
+  // How far the view zooms out at full explosion (fraction of bike size per side).
+  const ZOOM_PAD = 0.45;
+
+  const stage = document.getElementById('explode-stage');
+  const scroller = document.getElementById('explode-scroll');
+
+  fetch('{{ "/images/commuter.svg" | relative_url }}')
+    .then(r => r.text())
+    .then(init);
+
+  function init(text) {
+    const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+    const svg = document.importNode(doc.documentElement, true);
+
+    // Drop the hidden Inkscape tracing image and the fixed mm size.
+    const trace = svg.querySelector('#layer1');
+    if (trace) trace.remove();
+    svg.removeAttribute('width');
+    svg.removeAttribute('height');
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    stage.appendChild(svg);
+
+    const vb = svg.viewBox.baseVal;
+    const baseView = { x: vb.x, y: vb.y, w: vb.width, h: vb.height };
+    const rootInv = DOMMatrix.fromMatrix(svg.getScreenCTM()).inverse();
+    const toRoot = el => rootInv.multiply(DOMMatrix.fromMatrix(el.getScreenCTM()));
+
+    // Bounding box of an element in root (viewBox) coordinates.
+    function rootBox(el) {
+      const b = el.getBBox();
+      const m = toRoot(el);
+      const pts = [[b.x, b.y], [b.x + b.width, b.y], [b.x, b.y + b.height],
+                   [b.x + b.width, b.y + b.height]]
+        .map(([x, y]) => new DOMPoint(x, y).matrixTransform(m));
+      const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
+      return { x0: Math.min(...xs), y0: Math.min(...ys),
+               x1: Math.max(...xs), y1: Math.max(...ys) };
+    }
+    const union = (a, b) => a ? { x0: Math.min(a.x0, b.x0), y0: Math.min(a.y0, b.y0),
+                                  x1: Math.max(a.x1, b.x1), y1: Math.max(a.y1, b.y1) } : b;
+
+    // Wrap every member in a <g> we control, so existing transforms are untouched
+    // and stacking order (front/rear layers) is preserved.
+    const parts = [];
+    let bike = null;
+    for (const [name, ids] of Object.entries(PARTS)) {
+      const members = ids.map(id => svg.getElementById(id)).filter(Boolean);
+      if (!members.length) { console.warn('commuter: no elements for', name); continue; }
+      let box = null;
+      const wraps = members.map(el => {
+        box = union(box, rootBox(el));
+        const parentToRoot = toRoot(el.parentNode);
+        const wrap = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        wrap.setAttribute('class', 'explode-part');
+        el.parentNode.insertBefore(wrap, el);
+        wrap.appendChild(el);
+        return { wrap, parentToRoot, rootToParent: parentToRoot.inverse() };
+      });
+      bike = union(bike, box);
+      parts.push({ name, wraps, cx: (box.x0 + box.x1) / 2, cy: (box.y0 + box.y1) / 2 });
+    }
+    if (!bike) return;
+
+    const bx = (bike.x0 + bike.x1) / 2, by = (bike.y0 + bike.y1) / 2;
+    for (const p of parts) {
+      const t = Object.assign({}, DEFAULT, TUNING[p.name]);
+      const vx = p.cx - bx, vy = p.cy - by;
+      const len = Math.hypot(vx, vy) || 1;
+      const ux = vx / len, uy = vy / len;
+      p.dx = vx * t.scale + ux * t.base - uy * t.side + t.dx;
+      p.dy = vy * t.scale + uy * t.base + ux * t.side + t.dy;
+      p.spin = t.spin;
+    }
+
+    const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+    const ease = x => x * x * (3 - 2 * x);
+    const fmt = m => `matrix(${m.a} ${m.b} ${m.c} ${m.d} ${m.e} ${m.f})`;
+
+    function render() {
+      const rect = scroller.getBoundingClientRect();
+      const range = scroller.offsetHeight - window.innerHeight;
+      const raw = range > 0 ? clamp(-rect.top / range, 0, 1) : 0;
+      const k = ease(clamp((raw - START) / (END - START), 0, 1));
+
+      for (const p of parts) {
+        // Movement expressed in root coordinates, rotating about the part's centre...
+        const m = new DOMMatrix()
+          .translate(p.dx * k, p.dy * k)
+          .translate(p.cx, p.cy)
+          .rotate(p.spin * k)
+          .translate(-p.cx, -p.cy);
+        // ...then converted into each wrapper's own coordinate system.
+        for (const w of p.wraps) {
+          const local = w.rootToParent.multiply(m).multiply(w.parentToRoot);
+          w.wrap.setAttribute('transform', fmt(local));
+        }
+      }
+
+      // Zoom out as the parts spread so nothing leaves the frame.
+      const padX = baseView.w * ZOOM_PAD * k, padY = baseView.h * ZOOM_PAD * k;
+      svg.setAttribute('viewBox',
+        `${baseView.x - padX} ${baseView.y - padY} ${baseView.w + 2 * padX} ${baseView.h + 2 * padY}`);
+    }
+
+    let queued = false;
+    const onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => { queued = false; render(); });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    render();
+  }
+})();
+</script>
