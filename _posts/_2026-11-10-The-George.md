@@ -9,20 +9,23 @@ lon: -2.571175
 rating: 8
 ---
 
-This was my first trip to the George on a very rainy Tuesday night. 
+This was my first trip to the George, on a very rainy Tuesday night. I had already scoped out the exterior on Google maps looking for somewhere to lock my bike (there isn't anywhere, I ended up walking up there anyway) but I was still struck by how big it was inside. The heavy oak-beamed ceiling is high and there's plenty of space forming an L-shape around the bar. This in turn is surrounded by booth tables, with the upholstery much the worse for wear. It may have seemed all the larger for how empty it was, with a solitary bloke propping up the bar and one table occupied with a few mid thirties folk. The Courage Best on cask looked very inviting, but unfortunately had just been moved and hadn't had time to settle, meaning I had to settle for John Smiths. It was served in a clean glass and went down smoothly so I wasn't too put out.
 
 {% include figure.html
 src="/images/the-george/natch-tree.jpg"
-alt=""
-caption=""
+alt="A cone of Natch cider cans with tinsel at the top of each layer"
+caption="Happy Christmas!"
 %}
+
+The dartboard was down a small set of stairs in a room at the back of the pub, just past the Christmas decorations, apparently bigger than last years. The board was unbranded, but recognisable as a Winmau Blade 6 (confirmed by the Landlady, although she was evasive about her source for the board). I've seen these at the [Sandringham](https://fredcook.co.uk/2026/04/04/The-Sandringham), maybe it's a special pub tie-in to allow for board rotation not being given away by the logos at the top and bottom. The board was in great condition, with minimal signs of wear. The darts landed with lovely gentle thuds with barely a bounce-out to mention. There was a mount for a second dart board across a presumably un-used door, however, the board itself had been taken out of commission. When we arrived the board was being used by a couple using the pub's darts, relegating us to a game of pool. The only thing noteworthy about the game was that it only cost 50p.
 
 {% include figure.html
 src="/images/the-george/board.jpg"
-alt=""
-caption=""
+alt="a close up picture of the board, unbranded but in a Winmau foam surround."
+caption="The board."
 %}
 
+The oche was a wooden baton, roughly a centimetre high. Slightly too low to really slam your foot against, but navigable without looking down, and perhaps less of a trip hazard than other raised oches. 
 
 {% include figure.html
 src="/images/the-george/oche.jpg"
@@ -37,3 +40,4 @@ alt=""
 caption=""
 %}
 
+The Landlady mentioned there was a snazzy Super League set-up upstairs.
