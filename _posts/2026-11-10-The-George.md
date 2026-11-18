@@ -12,7 +12,7 @@ rating: 8
 This was my first trip to the George, on a very rainy Tuesday night. I had already scoped out the exterior on Google Street View looking for somewhere to lock my bike (there wasn't anywhere, I ended up walking up there anyway) but I was still struck by how big it was inside. The heavy oak-beamed ceiling is high and there's plenty of space forming an L-shape around the bar. This in turn is surrounded by booth tables, with the upholstery much the worse for wear. It may have seemed all the larger for how empty it was, with a solitary bloke propping up the bar and one table occupied with a few mid-thirties folk. The Courage Best on cask looked very inviting, but unfortunately had just been moved and hadn't had time to settle. This meant I in turn had to settle for John Smith's. It was served in a clean glass and went down smoothly so I wasn't too put out.
 
 {% include figure.html
-src="/images/the-george/natch-tree.jpg"
+src="/images/the-george/natch_tree.jpg"
 alt="A cone of Natch cider cans with tinsel at the top of each layer"
 caption="Happy Christmas!"
 %}
