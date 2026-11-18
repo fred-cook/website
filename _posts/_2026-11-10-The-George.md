@@ -33,12 +33,12 @@ alt="A wooden batton 2cm x 50cm x 1cm high, with some patchy black/yellow cautio
 caption="Slightly raised oche."
 %}
 
-Scoring options were two large chalkboards either side of the board, a standard set-up but tried and tested. There was definitely space to have a scorer unless someone is throwing particularly wildly. The secondary set-up in the room (with board currently missing) also had a small chalkboard, visible in the wide shot below.
+Scoring options were two large chalkboards either side of the board, a standard set-up but tried and tested. There was definitely space to have a scorer unless someone is throwing particularly wildly. The secondary set-up in the room (with board currently missing) also had a small chalkboard, visible in the wide shot below. You can also see some trophies above the dartboard cabinet, hinting at the George's illustrious past (and possibly present).
 
 {% include figure.html
 src="/images/the-george/wide.jpg"
-alt=""
-caption=""
+alt="a wider shot showing the board + chalkboard, pool table and some booths"
+caption="The back room where the darts are"
 %}
 
-The Landlady mentioned there was a snazzy Super League set-up upstairs.
+We only got a few games in, due to the board being occupied when we arrived and last orders being called around 9pm due to lack of custom. As we left I got the chance to ask the Landlady about the provenance of the unbranded Winmau Blade 6, mentioned above. She also mentioned there was a snazzy [Super League](https://westbristoldarts.leaguerepublic.com/fg/1_62727327.html) set-up upstairs, where the restrictions on board and lighting are much tighter for an official game. All in all I enjoyed playing at the Knowle, it's always a treat to play on a board with dedicated space, rather than being an after thought or aesthetic choice. I will have to come back another time, hopefully when the atmosphere is a bit livelier and possibly to spectate a Super League match to see the standard.
