@@ -25,14 +25,15 @@ alt="a close up picture of the board, unbranded but in a Winmau foam surround."
 caption="The board."
 %}
 
-The oche was a wooden baton, roughly a centimetre high. Slightly too low to really slam your foot against, but navigable without looking down, and perhaps less of a trip hazard than other raised oches. 
+The oche was a wooden baton, roughly a centimetre high. Slightly too low to really slam your foot against, but navigable without looking down, and perhaps less of a trip hazard than other raised oches. There's a small patch of worn away carpet in the centre of the oche showing how much use its had. Although this isn't out of keeping with the rest of the pub, which has definitely seen better days. I didn't measure the oche but it felt right, I trust that it was done properly in such a darts loving pub. There was plenty of space to [slide up and down the oche](https://www.youtube.com/shorts/viyOhc18Dxc) depending on your style and the lay of the darts. 
 
 {% include figure.html
 src="/images/the-george/oche.jpg"
-alt=""
-caption=""
+alt="A wooden batton 2cm x 50cm x 1cm high, with some patchy black/yellow caution tape on it"
+caption="Slightly raised oche."
 %}
 
+Scoring options were two large chalkboards either side of the board, a standard set-up but tried and tested. There was definitely space to have a scorer unless someone is throwing particularly wildly. The secondary set-up in the room (with board currently missing) also had a small chalkboard, visible in the wide shot below.
 
 {% include figure.html
 src="/images/the-george/wide.jpg"
