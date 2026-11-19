@@ -6,8 +6,12 @@ pub: Left Handed Giant Brew Pub
 location: Finzels Reach
 lat: 51.4544510
 lon: -2.589428
-rating: 7
+rating: 2
 ---
+
+### Update 15/10/2026
+
+Still only two dartboards in operation, looks like it will stay that way. Both dartboards are so well used they longer function as dartboards. The sisal is somehow very tatty but super compacted. I threw three darts at the bull, none of which stuck in the board. Score lowered to reflect this, you could probably still manage a game of round the clock on the doubles.
 
 I’m a big fan of the Left Handed Giant brew pub because it ticks a lot of boxes. First of all, it has a great range of beers. I don’t tend to go for IPAs and their derivatives any more, although they normally have ~10 on at any one time. There are plenty of other interesting beers, a few stouts, three cask beers on my last trip, a [radler](https://open.spotify.com/track/4HqlbB0BuahK05r6P2KcwP?si=9382ff9339de4919) for sunny days, and a well populated frequently rotated guest section. They also have a couple of bottle/can fridges, which I have largely ignored so far. However, on this trip, I spotted a Schlenkerla, which I bought as training for a trip to Bamberg later this year. I will definitely be sampling more of the fridge in future.
 
@@ -43,6 +47,6 @@ All in all, they have a great set-up. A few minor quibbles knock the score down 
 
 {% include figure.html
 src="/images/lhg/chopper.jpg"
-alt="two darts in the treble 20 and one dart out of the board for a score of 140"
+alt="two darts in the treble 20 and one dart out of the board for a score of 120"
 caption="Andrew’s high score, ton-twenty! Don’t worry about that third dart…"
 %}
