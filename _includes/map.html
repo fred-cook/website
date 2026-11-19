@@ -81,13 +81,13 @@ var unreviewedPubs = [
     { name: "Allstars Sports Bar", lat: 51.455739, lon: -2.605181 },
     { name: "The Eastville Club", lat: 51.471055, lon: -2.567238 },
     { name: "The Good Intent", lat: 51.440389, lon: -2.537411 },
-    { name: "The Pilgrim Inn", lat: 51.435276, lon: -2.548318 }
+    { name: "The Pilgrim Inn", lat: 51.435276, lon: -2.548318, notes: "Two dartboards in great nick 14/11/2026" }
 ];
 
 unreviewedPubs.forEach(function(pub) {
     L.marker([pub.lat, pub.lon], {icon: unReviewedIcon})
      .addTo(map)
-     .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>");
+     .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>\n" + pub.notes);
 });
 
 {% for post in site.posts %}
