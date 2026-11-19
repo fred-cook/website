@@ -87,7 +87,8 @@ var unreviewedPubs = [
 unreviewedPubs.forEach(function(pub) {
     L.marker([pub.lat, pub.lon], {icon: unReviewedIcon})
      .addTo(map)
-     .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>\n" + pub.notes);
+     .bindPopup("<b>" + pub.name + "</b><br><i>Not reviewed yet</i>" +
+         (pub.notes ? "<br>" + pub.notes : ""));
 });
 
 {% for post in site.posts %}
